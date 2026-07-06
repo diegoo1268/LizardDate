@@ -176,19 +176,19 @@
     </div>
 
     <div class="overlay" id="image-overlay" onclick="closeOverlay()">
-        <img src="sheep_note.png" alt="Secret Note" onclick="event.stopPropagation()">
+        <img src="LizardNote.png" alt="Secret Note" onclick="event.stopPropagation()">
     </div>
 
     <script>
     function checkSecret() {
         const input = document.getElementById('secret-input').value.toLowerCase().trim();
-        const correctPassword = 'lamblo';
+        const correctPassword = 'squilyd';
         
         if (input === correctPassword) {
             const overlay = document.getElementById('image-overlay');
             overlay.style.display = 'flex';
         } else {
-            alert("Not quite! Try again 💕\n\nHint: \n Lamborghini 🏎️");
+            alert("Not quite! Try again 💕\n\nHint: \n Our first ever password <3 🦑");
         }
     }
 
